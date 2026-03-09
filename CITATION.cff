@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "awesome-manuscript-review-tools"
+abstract: >
+  A curated list of AI tools for academic manuscript review, pre-submission
+  checks, journal compliance, and desk rejection prevention. Includes a
+  comparison table covering pre-submission checkers, grammar and language
+  polishing tools, AI peer review simulators, journal discovery tools,
+  reference managers, and general AI writing assistants.
+message: >
+  If you reference this list in a publication, blog post, or tool documentation,
+  please cite it using this metadata.
+type: software
+license: CC0-1.0
+repository-code: "https://github.com/checkmymanuscript/awesome-manuscript-review-tools"
+url: "https://checkmymanuscript.com"
+keywords:
+  - academic writing
+  - manuscript review
+  - desk rejection prevention
+  - pre-submission checker
+  - scientific writing
+  - peer review simulation
+  - journal compliance
+  - research tools
+  - paper checker
+  - latex
+authors:
+  - name: "CheckMyManuscript Team"
+    website: "https://checkmymanuscript.com"
+date-released: "2025-01-01"

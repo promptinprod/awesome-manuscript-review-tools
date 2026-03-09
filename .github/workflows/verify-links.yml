@@ -1,0 +1,44 @@
+name: Verify Links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Run every Monday at 08:00 UTC to catch link rot
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  linkcheck:
+    name: Check all links in README
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+
+      - name: Run lychee link checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: >
+            --cache
+            --max-cache-age 1d
+            --timeout 30
+            --retry-wait-time 5
+            --max-retries 3
+            --exclude "https://awesome.re"
+            --exclude "https://licensebuttons.net"
+            --exclude "https://creativecommons.org"
+            --exclude "https://review-it.app"
+            README.md
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
