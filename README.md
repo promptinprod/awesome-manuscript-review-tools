@@ -31,6 +31,7 @@ More than **50% of manuscript submissions are rejected without peer review** —
 | [Penelope.ai](https://penelope.ai) | Journal compliance | $10–$20/check | Journal-specific formatting checks | Yes | DOCX, LaTeX | ~40 |
 | [Reviewer3](https://reviewer3.com) | AI peer review | $9.99/review | Simulates peer reviewer feedback | Yes | PDF, DOCX | — |
 | [PaperReview.ai](https://paperreview.ai) | AI peer review | Free beta | Rapid structured review simulation | No | PDF | — |
+| [Manusights](https://manusights.com) | AI pre-submission review | Free scan / $39 one-time | Citation verification against live scholarly sources | Email only | PDF, DOCX | n/a |
 | [Thesify](https://thesify.ai) | Thesis review | $29/mo | Thesis-specific structure & argument checks | Yes | DOCX, PDF | ~15 |
 | [Scite](https://scite.ai) | Citation intelligence | Free / $20/mo | Smart citation context (supporting vs. contrasting) | Yes | — | — |
 | [SciSpace](https://typeset.io) | Writing assistant | Free / $12/mo | AI chat over papers; journal templates | Yes | PDF, DOCX | — |
@@ -131,7 +132,14 @@ Tools that generate mock reviewer feedback before actual submission.
 - **Formats:** DOCX, PDF
 - **Best for:** PhD students preparing thesis chapters for committee review or eventual journal submission.
 
-### [Review-it](https://review-it.app) *(if available)*
+### [Manusights](https://manusights.com)
+
+- **What it does:** Reads the whole manuscript the way a journal reviewer would and verifies its citations against live scholarly sources.
+- **Price:** Free readiness scan; Full Review $39 one-time
+- **Formats:** PDF, DOCX (.tex, .txt, .md read as text)
+- **Best for:** Authors who want reviewer-risk, journal-fit and citation problems found before submission
+
+### [Review-it](https://review-it.ai)
 
 - **What it does:** AI reviewer feedback with journal-specific framing.
 - **Price:** Varies
